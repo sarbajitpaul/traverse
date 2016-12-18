@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traverse</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+
+	<!-- this part defines the elements that will be rendered -->
+	<div>
+		<table>
+			<tr>
+				<th>Train Name</th>
+				<th>Train No.</th>
+				<th>Train From</th>
+				<th>Train To</th>
+			</tr>
+		</table>
+
+		<div id="train-container"></div>
+	</div>
+
+
+	<!-- main train template starts from here -->
+	<script id="train-template" type="text/x-handlebars-template">
+		{{#each train}}
+		<table>
+			<tr>
+				<td align="left">{{name}}</td>
+				<td align="left">{{number}}</td>
+				<td>{{from.name}}</td>
+				<td>{{to.name}}</td>
+			</tr>
+		</table>
+		{{/each}}
+	</script>
+
+
+	<script type="text/javascript" src="scripts/handlebars-v3.0.3.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
