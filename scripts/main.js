@@ -14,5 +14,5 @@ function createHtml(data){
 	var ourGeneratedHtml = compiledTemplate(data);
 
 	var trainContainer = document.getElementById("train-container");
-	trainContainer.innerHTML = ourGeneratedHtml;
+	trainContainer.innerHTML += ourGeneratedHtml;
 }

@@ -1,7 +1,12 @@
 table{
-	width:100%;
+	width: 100%;
+	border-collapse: collapse;
 }
 
 table , th{
 	border: 1px solid black;
+}
+
+th , td{
+	text-align: center;
 }
